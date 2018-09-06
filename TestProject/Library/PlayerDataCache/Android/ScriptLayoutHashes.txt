@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/GK/.jenkins/workspace/Master/TestProject/Build/201809061518.apk
+C:/Users/GK/.jenkins/workspace/Master/TestProject/Build/201809061552.apk
 SceneListBegin?
 Assets/Scenes/SampleScene.unity
 SceneListEnd?
