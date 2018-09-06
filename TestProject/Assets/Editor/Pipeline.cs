@@ -29,7 +29,12 @@ namespace UnityEditor
         {
             get
             {
-                return (Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "builds"));
+                //return (Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "builds"));
+                string assetsPath = Application.dataPath;
+                string dir = assetsPath.Substring(0, assetsPath.LastIndexOf('/')) + "/Build";
+                Directory.CreateDirectory(dir);
+                return dir;
+
             }
         }
 
