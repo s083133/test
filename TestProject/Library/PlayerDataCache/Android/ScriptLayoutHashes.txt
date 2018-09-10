@@ -1,10 +1,6 @@
 Android
 PlayerPath?
-<<<<<<< HEAD
-C:/Users/GK/Google Drive/Instincts/build.apk
-=======
-C:/Users/GK/.jenkins/workspace/Master/TestProject/Build/201809061600.apk
->>>>>>> 04688246ce10e0a901eb1833ea3a44052c60638d
+C:/Users/GK/Google Drive/Instincts/Build/build.apk
 SceneListBegin?
 Assets/Scenes/SampleScene.unity
 SceneListEnd?

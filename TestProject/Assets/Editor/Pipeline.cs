@@ -36,6 +36,7 @@ namespace UnityEditor
                 dir = dir.Substring(0, dir.LastIndexOf('\\'));
                 dir = (Path.Combine(dir, "Google Drive"));
                 dir = (Path.Combine(dir, "Instincts"));
+                dir = (Path.Combine(dir, "Build"));
                 //string assetsPath = Application.dataPath;
                 //string dir = assetsPath.Substring(0, assetsPath.LastIndexOf('/')) + "/Build";
                 if (Directory.Exists(dir)) { Directory.Delete(dir, true); }
