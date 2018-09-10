@@ -29,18 +29,22 @@ namespace UnityEditor
         {
             get
             {
-                //string dir = (Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "builds"));
+                string dir = (Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "builds"));
                 //string dir = "C:\\Users\\GK\\Google Drive\\Instincts";
 
-                string dir = (Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments));
-                dir = dir.Substring(0, dir.LastIndexOf('\\'));
-                dir = (Path.Combine(dir, "Google Drive"));
-                dir = (Path.Combine(dir, "Instincts"));
-                dir = (Path.Combine(dir, "Build"));
+                //string dir = (Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments));
+                //dir = dir.Substring(0, dir.LastIndexOf('\\'));
+                //dir = (Path.Combine(dir, "Google Drive"));
+                //dir = (Path.Combine(dir, "Instincts"));
+                //dir = (Path.Combine(dir, "Build"));
+
                 //string assetsPath = Application.dataPath;
                 //string dir = assetsPath.Substring(0, assetsPath.LastIndexOf('/')) + "/Build";
-                if (Directory.Exists(dir)) { Directory.Delete(dir, true); }
-                Directory.CreateDirectory(dir);
+                //if (Directory.Exists(dir)) { Directory.Delete(dir, true); }
+                if (!Directory.Exists(dir))
+                {
+                    Directory.CreateDirectory(dir);
+                }
                 return dir;
 
             }

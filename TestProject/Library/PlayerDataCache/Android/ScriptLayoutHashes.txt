@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/GK/Google Drive/Instincts/Build/build.apk
+C:/Users/GK/Desktop/builds/build.apk
 SceneListBegin?
 Assets/Scenes/SampleScene.unity
 SceneListEnd?
