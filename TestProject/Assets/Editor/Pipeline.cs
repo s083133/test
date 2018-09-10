@@ -29,9 +29,17 @@ namespace UnityEditor
         {
             get
             {
-                //return (Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "builds"));
-                string assetsPath = Application.dataPath;
-                string dir = assetsPath.Substring(0, assetsPath.LastIndexOf('/')) + "/Build";
+                //string dir = (Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "builds"));
+                //string dir = "C:\\Users\\GK\\Google Drive\\Instincts";
+
+                string dir = (Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments));
+                dir = dir.Substring(0, dir.LastIndexOf('\\'));
+                dir = (Path.Combine(dir, "Google Drive"));
+                dir = (Path.Combine(dir, "Instincts"));
+                //string assetsPath = Application.dataPath;
+                //string dir = assetsPath.Substring(0, assetsPath.LastIndexOf('/')) + "/Build";
+                Debug.Log(dir);
+                if (Directory.Exists(dir)) { Directory.Delete(dir, true); }
                 Directory.CreateDirectory(dir);
                 return dir;
 
@@ -49,7 +57,7 @@ namespace UnityEditor
         {
             get
             {
-                return (DateTime.Now.ToString("yyyyMMddHHmm") + ".apk");
+                return ("build" + ".apk");
             }
         }
     }
