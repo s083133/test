@@ -39,7 +39,7 @@ namespace UnityEditor
                 //dir = (Path.Combine(dir, "Build"));
 
                 string assetsPath = Application.dataPath;
-                string dir = assetsPath.Substring(0, assetsPath.LastIndexOf('/')) + "/Build";
+                string dir = assetsPath.Substring(0, assetsPath.LastIndexOf('/')) + "/Build/Instincts";
                 //if (Directory.Exists(dir)) { Directory.Delete(dir, true); }
                 if (!Directory.Exists(dir))
                 {
