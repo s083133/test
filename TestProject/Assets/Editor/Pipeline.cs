@@ -61,7 +61,7 @@ namespace UnityEditor
         {
             get
             {
-                return ("build" + ".apk");
+                return ("build.apk");
             }
         }
     }
